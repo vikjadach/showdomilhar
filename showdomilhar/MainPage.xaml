@@ -15,7 +15,8 @@
           <RowDefinition Height="*"/>
           <RowDefinition Height="*"/>
           <RowDefinition Height="*"/>
-          <RowDefinition Height="*"/>                 
+          <RowDefinition Height="*"/>  
+           <RowDefinition Height="*"/>                
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
           <ColumnDefinition Width="*"/>
@@ -23,74 +24,82 @@
           <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-            <Image 
-                  Source="showdomilhar.png"
-                  Grid.ColumnSpan="3"  
-                  Grid.RowSpan="0"
-                  Aspect="AspectFill"/>
-                 
-            <Label 
-                   Text="show do milhão"
-                   Grid.ColumnSpan="3"
-                   FontSize="20"
-                   HorizontalTextAlignment="Center"
-                   Grid.Row="1" />
+              <Image 
+                     Source="showdomilharroxa.png"
+                     Grid.ColumnSpan="3"  
+                     Grid.RowSpan="0"
+                     Aspect="AspectFill"/>
+                     
+              <Label x:Name ="labelPontuacao"
+                     Text="pontuação"
+                     Grid.ColumnSpan="2"
+                     FontSize="20"
+                     HorizontalTextAlignment="Center"
+                     Grid.Row="1" />
 
-            <Button
-                   Grid.ColumnSpan="3"
-                   Grid.Row="2"
-                   Margin="0,0,0,5"
-                   BackgroundColor="#944dff"
-                   Text="A)" />        
+              <Label x:Name ="labelnivel"
+                     Text="nivel"
+                     Grid.Column="3"
+                     FontSize="20"
+                     HorizontalTextAlignment="Center"
+                     Grid.Row="2" />
 
-            <Button
-                   Grid.ColumnSpan="3"
-                   Grid.Row="3"
-                   Margin="0,0,0,5"
-                   BackgroundColor="#944dff" 
-                   Text="B)"/>
 
-            <Button
-                   Grid.ColumnSpan="3"
-                   Grid.Row="4"
-                   Margin="0,0,0,5"
-                   BackgroundColor="#944dff" 
-                   Text="C)"/>
+              <Button x:Name ="buttonrep1"
+                     Grid.ColumnSpan="3"
+                     Grid.Row="3"
+                     Margin="0,0,0,5"
+                     BackgroundColor="#944dff"
+                     Text="A)" />        
 
-            <Button
-                   Grid.ColumnSpan="3"
-                   Grid.Row="5"
-                   Margin="0,0,0,5"
-                   BackgroundColor="#944dff" 
-                   Text="D)"/>
+              <Button x:Name ="buttonrep2"
+                     Grid.ColumnSpan="3"
+                     Grid.Row="4"
+                     Margin="0,0,0,5"
+                     BackgroundColor="#944dff" 
+                     Text="B)"/>
 
-            <Button
-                   Grid.ColumnSpan="3"
-                   Grid.Row="6"
-                   Margin="0,0,0,5"
-                   BackgroundColor="#944dff" 
-                   Text="E)"/>
-       
-             <Button
-                   Grid.Column="0"
-                   Grid.Row="7"
-                   Margin="5,2,0,5"
-                   BackgroundColor="#944dff" 
-                   Text="E)"/>
-            
-             <Button
-                   Grid.Column="1"
-                   Grid.Row="7"
-                   Margin="5,2,0,5"
-                   BackgroundColor="#944dff" 
-                   Text="E)"/>
+              <Button x:Name ="buttonrep3"
+                     Grid.ColumnSpan="3"
+                     Grid.Row="5"
+                     Margin="0,0,0,5"
+                     BackgroundColor="#944dff" 
+                     Text="C)"/>
 
-             <Button
-                   Grid.Column="2"
-                   Grid.Row="7"
-                   Margin="5,2,0,5"
-                   BackgroundColor="#944dff" 
-                   Text="E)"/>
+              <Button x:Name =" buttonrep4"
+                     Grid.ColumnSpan="3"
+                     Grid.Row="6"
+                     Margin="0,0,0,5"
+                     BackgroundColor="#944dff" 
+                     Text="D)"/>
+
+              <Button x:Name ="buttonrep5"
+                     Grid.ColumnSpan="3"
+                     Grid.Row="7"
+                     Margin="0,0,0,5"
+                     BackgroundColor="#944dff" 
+                     Text="E)"/>
+              
+              <Button
+                     Grid.Column="0"
+                     Grid.Row="8"
+                     Margin="5,2,0,5"
+                     BackgroundColor="#944dff" 
+                     Text="E)"/>
+              
+              <Button
+                     Grid.Column="1"
+                     Grid.Row="8"
+                     Margin="5,2,0,5"
+                     BackgroundColor="#944dff" 
+                     Text="E)"/>
+
+              <Button
+                     Grid.Column="2"
+                     Grid.Row="8"
+                     Margin="5,2,0,5"
+                     BackgroundColor="#944dff" 
+                     Text="E)"/>
 
 
 
