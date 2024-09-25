@@ -6,8 +6,7 @@ public partial class MainPage : ContentPage
 	public MainPage()
 	{
 		InitializeComponent();
-    gerenciador = new Gerenciador(labelPontuacao,labelnivel, buttonrep1, buttonrep2, buttonrep3, buttonrep4, buttonrep5);
-    gerenciador.ProximaQuestao();
+    gerenciador = new Gerenciador (labelPergunta, labelPontuacao,labelnivel, buttonrep1, buttonrep2, buttonrep3, buttonrep4, buttonrep5);
 	}
 
   private void OnBtnResposta01Clicked(object sender, EventArgs e)
@@ -35,3 +34,5 @@ public partial class MainPage : ContentPage
     gerenciador!.VerificaCorreto(5);
   }
 }
+
+

@@ -1,8 +1,9 @@
 namespace showdomilhar
 {
-  public class questao
+
+  public class Questao
   {
-    public string Questao { get; set; }
+    public string questaoi { get; set; }
 
     //---------------------------------------------------------------
     public string resposta1 { get; set; }
@@ -20,9 +21,18 @@ namespace showdomilhar
     private Button buttonrep4;
     private Button buttonrep5;
 
-    public void desenhar()
+    public void ConfiguraDesenho(Label labelPergunta, Button buttonrep1, Button buttonrep2, Button buttonrep3, Button buttonrep4, Button buttonrep5)
     {
-      labelPergunta.Text = Questao;
+      this.labelPergunta = labelPergunta;
+      this.buttonrep1 = buttonrep1;
+      this.buttonrep2 = buttonrep2;
+      this.buttonrep3 = buttonrep3;
+      this.buttonrep4 = buttonrep4;
+      this.buttonrep5 = buttonrep5;
+    }
+    public void Desenhar()
+    {
+      labelPergunta.Text = questaoi;
       buttonrep1.Text = resposta1;
       buttonrep2.Text = resposta2;
       buttonrep3.Text = resposta3;
@@ -32,9 +42,9 @@ namespace showdomilhar
 
 
 
-    public  questao ()
-    {}
-    public questao(Label per, Button bot1, Button bot2, Button bot3, Button bot4, Button bot5)
+    public Questao()
+    { }
+    public Questao(Label per, Button bot1, Button bot2, Button bot3, Button bot4, Button bot5)
     {
       labelPergunta = per;
       buttonrep1 = bot1;
@@ -45,7 +55,7 @@ namespace showdomilhar
     }
 
 
-    public bool verificaresposdta(int RespostaC)
+    public bool EstaCorreto(int RespostaC)
     {
       if (RespostaC == RespostaR)
       {
@@ -58,8 +68,8 @@ namespace showdomilhar
         return false;
       }
     }
-     
-    private Button QualBot (int RespostaC)
+
+    private Button QualBot(int RespostaC)
     {
       if (RespostaC == 1)
         return buttonrep1;
@@ -71,20 +81,8 @@ namespace showdomilhar
         return buttonrep4;
       else if (RespostaC == 5)
         return buttonrep5;
-        else
+      else
         return null;
     }
   }
 }
-
-
-
-//ublic void configurar(Label per,Button bot1,Button bot2,Button bot3,Button bot4,Button bot5); 
-// {
-//  labelPergunta=per;
-//  buttonrep=bot1;
-//  buttonrep=bot2;
-//  buttonrep=bot3;
-//  buttonrep=bot4;
-//  buttonrep=bot5;
-// }

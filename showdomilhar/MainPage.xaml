@@ -37,6 +37,13 @@
                      HorizontalTextAlignment="Center"
                      Grid.Row="1" />
 
+              <Label x:Name ="labelPergunta"
+                     Text="pontuação"
+                     Grid.ColumnSpan="2"
+                     FontSize="20"
+                     HorizontalTextAlignment="Center"
+                     Grid.Row="1" />
+
               <Label x:Name ="labelnivel"
                      Text="nivel"
                      Grid.Column="3"
